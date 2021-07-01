@@ -8,8 +8,8 @@ def stock_picker(stocks)
         stocks.each_with_index do |j, index_j|
             if (j - i) > profit && (index_j > index_i)
                 profit = j - i
-                a = index_i
-                b = index_j
+                buy = index_i
+                sell = index_j
             end
         end
     end
