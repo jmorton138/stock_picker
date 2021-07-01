@@ -1,8 +1,8 @@
 def stock_picker(stocks)
     # find the biggest difference between b - a
     # sort through values comparing difference, storing current biggest difference
-    a = 0
-    b = 0
+    buy = 0
+    sell = 0
     profit = 0
     stocks.each_with_index do |i, index_i|
         stocks.each_with_index do |j, index_j|
@@ -13,7 +13,7 @@ def stock_picker(stocks)
             end
         end
     end
-    p [a, b]
+    p [buy, sell]
 end
 
 
